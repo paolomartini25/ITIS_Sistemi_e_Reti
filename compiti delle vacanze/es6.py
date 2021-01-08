@@ -34,12 +34,9 @@ def max_min (anno1, anno2):
     else:
         print('Il primo anno che hai inserito dovevea essere più grande del secondo.')
     
-    
-
-
-if __name__ == "__main__":
+def main():
     file = open("./annual.csv", "r")
-
+    
     dizionario = {}
     cont = 0
     anno = 0
@@ -56,10 +53,11 @@ if __name__ == "__main__":
         cont = cont + 1
 
     file.close()
-
     print('Ora dovrai inserire due date, la prima dovrà essere più grande della seconda')
-
     max_min (int(input('Inserire il primo anno: ')), int(input('Inserire il secondo anno: ')))
+
+if __name__ == "__main__":
+    main()
     
     
 

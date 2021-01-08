@@ -22,9 +22,7 @@ def cripta(lettera):
             criptata = alfabeto[num]
             print(criptata,end='')
             
-
-if __name__ == "__main__":
-
+def main():
     scelta=int(input('Inserisci 0 se vuoi decriptare una strnga.\nInserisci 1 se vuoi criptare una stringa '))
 
     if (scelta == 0):#l'utente decide tra decriptare e criptare, se decide di decriptare:
@@ -37,8 +35,6 @@ if __name__ == "__main__":
         i = 0
         for i in range(0, len(stringa)):
             cripta(stringa[i])
-    
 
-"""
-
-"""
+if __name__ == "__main__":
+    main()
