@@ -1,0 +1,1 @@
+for i in range(23-1, 0, -1):   print(i)
